@@ -1,0 +1,1283 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext");
+/* line 5, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/all/wrapper.scss */
+body {
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* line 10, ../sass/all/wrapper.scss */
+html, body {
+  min-height: 100%;
+  height: 100%;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Контейнер */
+/* line 19, ../sass/all/wrapper.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 21, ../sass/all/wrapper.scss */
+.container {
+  width: 1262px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 27, ../sass/all/wrapper.scss */
+.column, .columns {
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* line 33, ../sass/all/wrapper.scss */
+.content {
+  overflow: hidden;
+}
+
+/* line 35, ../sass/all/wrapper.scss */
+.container .sixteen.columns {
+  width: 1202px;
+}
+
+/* line 37, ../sass/all/wrapper.scss */
+.position-relative {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 42, ../sass/all/wrapper.scss */
+input[type="text"], input[type="submit"], input[type="email"], textarea {
+  -webkit-appearance: none;
+}
+
+/* line 44, ../sass/all/wrapper.scss */
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 49, ../sass/all/wrapper.scss */
+  .container {
+    width: 980px;
+  }
+
+  /* line 50, ../sass/all/wrapper.scss */
+  .container .sixteen.columns {
+    width: 960px;
+  }
+
+  /* line 51, ../sass/all/wrapper.scss */
+  .column, .columns {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 58, ../sass/all/wrapper.scss */
+  .container {
+    width: 100%;
+  }
+
+  /* line 59, ../sass/all/wrapper.scss */
+  .container .sixteen.columns {
+    width: 96%;
+  }
+
+  /* line 60, ../sass/all/wrapper.scss */
+  .column, .columns {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  /* line 61, ../sass/all/wrapper.scss */
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 67, ../sass/all/wrapper.scss */
+  .container {
+    width: 100vw;
+  }
+
+  /* line 68, ../sass/all/wrapper.scss */
+  .container .sixteen.columns {
+    width: 90vw;
+  }
+
+  /* line 69, ../sass/all/wrapper.scss */
+  .column, .columns {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  /* line 70, ../sass/all/wrapper.scss */
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* line 73, ../sass/all/wrapper.scss */
+  #video-bg {
+    display: none !important;
+  }
+}
+/* line 3, ../sass/all/header.scss */
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+  align-items: center;
+}
+/* line 15, ../sass/all/header.scss */
+.Header .HeaderLogo {
+  display: block;
+  width: 140px;
+  height: 48px;
+  overflow: hidden;
+}
+/* line 21, ../sass/all/header.scss */
+.Header .HeaderLogo img {
+  width: 100%;
+  display: block;
+}
+/* line 27, ../sass/all/header.scss */
+.Header .HeaderR {
+  display: flex;
+}
+/* line 30, ../sass/all/header.scss */
+.Header .HeaderR .HeaderPhone {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  display: block;
+  position: relative;
+}
+/* line 40, ../sass/all/header.scss */
+.Header .HeaderR .HeaderPhone:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background: #ed2121 url(../img/phone.png) center center no-repeat;
+  background-size: 14px 16px;
+  transition: .2s all ease-in;
+}
+/* line 55, ../sass/all/header.scss */
+.Header .HeaderR .HeaderPhone:hover:after {
+  transform: rotate(45deg);
+}
+/* line 61, ../sass/all/header.scss */
+.Header .HeaderR .HeaderLogin {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 46px;
+  height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 14px;
+  position: relative;
+}
+/* line 71, ../sass/all/header.scss */
+.Header .HeaderR .HeaderLogin:hover {
+  color: #ed2121;
+}
+/* line 76, ../sass/all/header.scss */
+.Header .HeaderR .HeaderLogin:nth-child(3) {
+  margin-left: 16px;
+}
+/* line 79, ../sass/all/header.scss */
+.Header .HeaderR .HeaderLogin:nth-child(3):after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  opacity: 0.5;
+  right: 0;
+  background: #ffffff;
+  height: 35px;
+  width: 1px;
+}
+/* line 91, ../sass/all/header.scss */
+.Header .HeaderR .HeaderLogin:nth-child(4) {
+  padding-right: 0;
+}
+/* line 96, ../sass/all/header.scss */
+.Header .HeaderR .HeaderBtn {
+  color: #ffffff;
+  margin-left: 29px;
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 46px;
+  text-transform: uppercase;
+  height: 50px;
+  border: 2px solid #ed2121;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 0 25px;
+  transition: .2s all ease-in;
+}
+/* line 112, ../sass/all/header.scss */
+.Header .HeaderR .HeaderBtn:hover {
+  background-color: #ed2121;
+}
+/* line 118, ../sass/all/header.scss */
+.Header .popup-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 357px;
+  transform: translate(0%, -800%);
+  transition: 1s all;
+  background-color: #ed2121;
+  z-index: 99999;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 135, ../sass/all/header.scss */
+.Header .popup-menu:after {
+  position: absolute;
+  content: '';
+  bottom: -195px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 195px;
+  z-index: 999999;
+  background: -moz-linear-gradient(top, #ed2121 0%, #ed2121 10%, rgba(237, 33, 33, 0.7) 44%, rgba(237, 33, 33, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ed2121 0%, #ed2121 10%, rgba(237, 33, 33, 0.7) 44%, rgba(237, 33, 33, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ed2121 0%, #ed2121 10%, rgba(237, 33, 33, 0.7) 44%, rgba(237, 33, 33, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2121', endColorstr='#00ed2121',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 150, ../sass/all/header.scss */
+.Header .popup-active {
+  transform: translate(0, 0);
+  transition: 0.3s all;
+}
+/* line 155, ../sass/all/header.scss */
+.Header .open-btn {
+  right: 25px;
+  top: 31px;
+  position: absolute;
+  width: 25px;
+  height: 21px;
+  display: none;
+}
+/* line 163, ../sass/all/header.scss */
+.Header .open-btn i {
+  position: absolute;
+  font-size: 8px;
+  line-height: 1.5;
+  bottom: -18px;
+  left: 0px;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 174, ../sass/all/header.scss */
+.Header .open-btn:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 21px;
+  background: url(../img/menu.png) 50% 50% no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+/* line 188, ../sass/all/header.scss */
+.Header .close-btn {
+  position: absolute;
+  right: 25px;
+  top: 31px;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+  background: url(../img/exit.svg) 50% 50% no-repeat;
+  background-size: cover;
+  order: 3;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 202, ../sass/all/header.scss */
+  .Header {
+    padding: 30px 30px;
+  }
+  /* line 207, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderPhone {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  /* line 211, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderPhone:after {
+    top: 5px;
+  }
+  /* line 216, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderBtn {
+    margin-left: 25px;
+    font-size: 12px;
+    line-height: 36px;
+    height: 40px;
+  }
+  /* line 223, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLogin {
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+  }
+  /* line 230, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLogin:nth-child(3):after {
+    top: 4px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 241, ../sass/all/header.scss */
+  .Header {
+    padding: 20px 20px;
+  }
+  /* line 244, ../sass/all/header.scss */
+  .Header .HeaderLogo {
+    display: block;
+    width: 130px;
+    height: 45px;
+  }
+  /* line 250, ../sass/all/header.scss */
+  .Header .HeaderR {
+    align-items: center;
+  }
+  /* line 252, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderPhone {
+    line-height: 46px;
+    font-size: 10px;
+  }
+  /* line 257, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderBtn {
+    margin-left: 13px;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 36px;
+    height: 40px;
+  }
+  /* line 265, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLogin {
+    padding: 0 12px;
+    font-size: 10px;
+  }
+  /* line 269, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLogin:nth-child(3) {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  /* line 275, ../sass/all/header.scss */
+  .Header .HeaderR .popup-menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 283, ../sass/all/header.scss */
+  .Header {
+    padding: 5vw;
+    z-index: 8;
+  }
+  /* line 287, ../sass/all/header.scss */
+  .Header .HeaderLogo {
+    display: block;
+    width: 105px;
+    height: 36px;
+    z-index: 999999999999;
+    overflow: visible;
+  }
+  /* line 294, ../sass/all/header.scss */
+  .Header .HeaderLogo img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 999999999999;
+  }
+  /* line 303, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderPhone {
+    z-index: 9999999;
+    font-size: 0;
+    line-height: 30px;
+    padding-left: 0;
+    margin-right: 78px;
+  }
+  /* line 310, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderPhone:after {
+    top: 0px;
+    width: 30px;
+    height: 30px;
+  }
+  /* line 317, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderBtn {
+    display: none;
+  }
+  /* line 321, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLogin {
+    display: none;
+  }
+  /* line 325, ../sass/all/header.scss */
+  .Header .HeaderR .open-btn {
+    display: block;
+    right: 5vw;
+    top: 5.2vw;
+  }
+  /* line 331, ../sass/all/header.scss */
+  .Header .HeaderR .close-btn {
+    right: 5.4vw;
+    top: 7vw;
+    width: 16px;
+    height: 17px;
+  }
+  /* line 338, ../sass/all/header.scss */
+  .Header .HeaderR .popup-menu {
+    height: 84vw;
+  }
+  /* line 342, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderBtnMenu {
+    color: #ffffff;
+    display: block;
+    font-size: 4vw;
+    font-weight: 800;
+    line-height: 44px;
+    text-transform: uppercase;
+    height: 50px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 0 25px;
+    transition: .2s all ease-in;
+    margin-top: 100px;
+  }
+  /* line 359, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLoginMenu {
+    margin-top: 41vw;
+    color: #ffffff;
+    font-size: 2.8vw;
+    font-weight: 800;
+    line-height: 8vw;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1vw;
+  }
+  /* line 371, ../sass/all/header.scss */
+  .Header .HeaderR .HeaderLoginMenu:nth-child(3) {
+    color: #ffffff;
+    font-size: 2.8vw;
+    font-weight: 800;
+    line-height: 8vw;
+    text-transform: uppercase;
+    margin-top: 1vw;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+/* line 3, ../sass/all/footer.scss */
+#Footer {
+  padding: 46px 0;
+  padding: 36px 0;
+}
+/* line 7, ../sass/all/footer.scss */
+#Footer .FooterWr {
+  display: flex;
+  padding: 0 21px;
+}
+/* line 11, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox {
+  width: calc(100% / 3);
+}
+/* line 14, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox span {
+  color: #373737;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+  display: block;
+  transition: .2s all ease-in;
+}
+/* line 22, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox span > a {
+  color: #373737;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+  display: block;
+  width: max-content;
+  transition: .2s all ease-in;
+}
+/* line 31, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox span > a:hover {
+  color: #ed2121;
+}
+/* line 36, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox span:hover {
+  color: #ed2121;
+}
+/* line 41, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox p {
+  color: #909090;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 23px;
+}
+/* line 48, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox p.mobile {
+  display: none;
+}
+/* line 52, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox p .FooterSite {
+  display: block;
+  background: url(../img/Kosmos.png) center center no-repeat;
+  background-size: contain;
+  width: 140px;
+  height: 18px;
+  transition: .2s all ease-in;
+}
+/* line 60, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox p .FooterSite:hover {
+  background: url(../img/KosmosR.png) center center no-repeat;
+  background-size: contain;
+}
+/* line 67, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 72, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterBox:nth-child(3) p {
+  text-align: center;
+}
+/* line 78, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+/* line 85, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM span {
+  color: #373737;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+/* line 92, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial {
+  display: flex;
+  margin-top: 15px;
+}
+/* line 96, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial > a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  margin: 0 5px;
+  transition: .2s all ease-in;
+}
+/* line 105, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .fb {
+  background: url(../img/fb.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 109, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .fb:hover {
+  background: url(../img/bgH.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 115, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .ins {
+  background: url(../img/ins.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 119, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .ins:hover {
+  background: url(../img/insH.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 125, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .yt {
+  background: url(../img/yt.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 129, ../sass/all/footer.scss */
+#Footer .FooterWr .FooterM .FooterMSocial .yt:hover {
+  background: url(../img/ytH.png) center center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1240px) {
+  /* line 147, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox span > a {
+    font-size: 20px;
+  }
+  /* line 152, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+  /* line 156, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p .FooterSite {
+    width: 130px;
+    height: 15px;
+  }
+  /* line 165, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM span {
+    font-size: 13px;
+  }
+  /* line 171, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial > a {
+    width: 33px;
+    height: 33px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 182, ../sass/all/footer.scss */
+  #Footer {
+    padding: 8vw 0;
+  }
+  /* line 185, ../sass/all/footer.scss */
+  #Footer .FooterWr {
+    display: flex;
+    padding: 0 21px;
+    flex-direction: column;
+  }
+  /* line 190, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox {
+    width: calc(100% / 1);
+    text-align: center;
+    order: 4;
+  }
+  /* line 195, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox span {
+    color: #373737;
+    font-size: 3vw;
+    font-weight: 800;
+    line-height: 1.5;
+    display: block;
+  }
+  /* line 202, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox span > a {
+    color: #373737;
+    font-size: 5vw;
+    font-weight: 800;
+    line-height: 1.5;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 212, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p {
+    color: #909090;
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 3vw;
+  }
+  /* line 219, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p.desktop {
+    display: none;
+  }
+  /* line 223, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p.mobile {
+    display: block;
+    text-align: center;
+  }
+  /* line 227, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p.mobile a {
+    display: inline-block;
+  }
+  /* line 232, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox p .FooterSite {
+    display: block;
+    background: url(../img/Kosmos.png) center center no-repeat;
+    background-size: contain;
+    width: 140px;
+    height: 14px;
+  }
+  /* line 242, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    margin-bottom: 12px;
+  }
+  /* line 249, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterBox:nth-child(3) p {
+    text-align: center;
+  }
+  /* line 255, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM {
+    width: calc(100% / 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 3vw;
+  }
+  /* line 263, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM span {
+    color: #373737;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  /* line 270, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial {
+    display: flex;
+    margin-top: 3vw;
+  }
+  /* line 274, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial > a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    margin: 0 5px;
+  }
+  /* line 283, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial .fb {
+    background: url(../img/fb.png) center center no-repeat;
+    background-size: cover;
+  }
+  /* line 288, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial .ins {
+    background: url(../img/ins.png) center center no-repeat;
+    background-size: cover;
+  }
+  /* line 293, ../sass/all/footer.scss */
+  #Footer .FooterWr .FooterM .FooterMSocial .yt {
+    background: url(../img/yt.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+/* line 1, ../sass/all/thanks.scss */
+.Thank {
+  height: 100vh;
+  background: url(../img/thanks.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 8, ../sass/all/thanks.scss */
+.Thank:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(50, 50, 50, 0.75);
+}
+
+/* line 19, ../sass/all/thanks.scss */
+#Thank {
+  position: relative;
+  z-index: 1;
+  padding-top: 25vh;
+  padding-left: 1.4vw;
+}
+/* line 27, ../sass/all/thanks.scss */
+#Thank .ThankBlock h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+/* line 35, ../sass/all/thanks.scss */
+#Thank .ThankBlock span {
+  color: #fff;
+  margin-top: 4vh;
+  display: block;
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* line 43, ../sass/all/thanks.scss */
+#Thank .ThankBlock > a {
+  color: #ffffff;
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 44px;
+  text-transform: uppercase;
+  height: 50px;
+  border: 2px solid #ed2121;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 0px 40px;
+  transition: .2s all ease-in;
+  width: max-content;
+  margin-top: 5vh;
+}
+/* line 60, ../sass/all/thanks.scss */
+#Thank .ThankBlock > a:hover {
+  background-color: #ed2121;
+}
+
+/* line 67, ../sass/all/thanks.scss */
+.HeaderLogoThank {
+  padding: 50px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 48px;
+  overflow: hidden;
+  z-index: 2;
+}
+/* line 77, ../sass/all/thanks.scss */
+.HeaderLogoThank > img {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 1241px) and (max-width: 1366px) {
+  /* line 84, ../sass/all/thanks.scss */
+  #Thank {
+    padding-top: 30vh;
+    padding-left: 12.4vw;
+  }
+  /* line 89, ../sass/all/thanks.scss */
+  #Thank .ThankBlock h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  /* line 94, ../sass/all/thanks.scss */
+  #Thank .ThankBlock span {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 103, ../sass/all/thanks.scss */
+  #Thank {
+    padding-top: 30vh;
+    padding-left: 18.4vw;
+  }
+  /* line 108, ../sass/all/thanks.scss */
+  #Thank .ThankBlock h2 {
+    font-size: 38px;
+    line-height: 55px;
+  }
+  /* line 113, ../sass/all/thanks.scss */
+  #Thank .ThankBlock span {
+    font-size: 18px;
+    margin-top: 2vh;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 122, ../sass/all/thanks.scss */
+  #Thank {
+    padding-left: 20.4vw;
+    padding-top: 30vh;
+  }
+  /* line 127, ../sass/all/thanks.scss */
+  #Thank .ThankBlock h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  /* line 132, ../sass/all/thanks.scss */
+  #Thank .ThankBlock span {
+    font-size: 15px;
+    margin-top: 2vh;
+  }
+  /* line 137, ../sass/all/thanks.scss */
+  #Thank .ThankBlock > a {
+    font-size: 12px;
+    line-height: 42px;
+    height: 45px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 147, ../sass/all/thanks.scss */
+  #Thank {
+    padding-left: 5vw;
+    padding-top: 30vh;
+  }
+  /* line 152, ../sass/all/thanks.scss */
+  #Thank .ThankBlock h2 {
+    font-size: 7vw;
+    line-height: 42px;
+  }
+  /* line 157, ../sass/all/thanks.scss */
+  #Thank .ThankBlock span {
+    font-size: 4vw;
+    margin-top: 2vh;
+  }
+  /* line 162, ../sass/all/thanks.scss */
+  #Thank .ThankBlock > a {
+    font-size: 3.5vw;
+    line-height: 11vw;
+    height: 12vw;
+    padding: 0px 30px;
+  }
+
+  /* line 171, ../sass/all/thanks.scss */
+  .HeaderLogoThank {
+    padding: 7vw;
+    width: 120px;
+    height: 40px;
+  }
+}
+/* line 3, ../sass/all/popup.scss */
+.open_popup {
+  cursor: pointer;
+}
+
+/* line 7, ../sass/all/popup.scss */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.95;
+  background: #222;
+}
+
+/* line 21, ../sass/all/popup.scss */
+.popup {
+  display: none;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  z-index: 99999999999;
+  margin-top: -300px;
+  margin-left: -300px;
+  border-radius: 15px;
+  text-align: center;
+}
+/* line 37, ../sass/all/popup.scss */
+.popup h3 {
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: #373737;
+  font-size: 25px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 75px;
+  font-weight: 900;
+}
+/* line 50, ../sass/all/popup.scss */
+.popup p {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #373737;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+/* line 59, ../sass/all/popup.scss */
+.popup .FormPopUp {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 65, ../sass/all/popup.scss */
+.popup .FormPopUp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 70, ../sass/all/popup.scss */
+.popup .FormPopUp form div {
+  position: relative;
+}
+/* line 75, ../sass/all/popup.scss */
+.popup .FormPopUp form div.tit:after {
+  visibility: visible;
+}
+/* line 81, ../sass/all/popup.scss */
+.popup .FormPopUp form div:after {
+  content: 'пустое поле';
+  position: absolute;
+  bottom: 0;
+  color: #ff0000;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18.01px;
+  text-transform: uppercase;
+  visibility: hidden;
+  left: 0;
+  width: 100%;
+}
+/* line 98, ../sass/all/popup.scss */
+.popup input {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  color: #373737;
+  font-size: 18px;
+  background: #e8e8e8;
+  outline: none;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  width: 250px;
+  text-align: center;
+  font-weight: 900;
+}
+/* line 118, ../sass/all/popup.scss */
+.popup input.error {
+  background: #f3dada;
+}
+/* line 122, ../sass/all/popup.scss */
+.popup input.SubmitClose {
+  width: 280px;
+  height: 60px;
+  background: #ffb400;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 30px;
+  color: #373737;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 70px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+/* line 137, ../sass/all/popup.scss */
+.popup input.SubmitClose:hover {
+  background: #ffc71a;
+}
+/* line 142, ../sass/all/popup.scss */
+.popup input::placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #373737;
+  text-align: center;
+}
+/* line 150, ../sass/all/popup.scss */
+.popup input:hover {
+  cursor: pointer;
+  background: #f3ebd9;
+}
+/* line 155, ../sass/all/popup.scss */
+.popup input:focus {
+  background: #f3ebd9;
+}
+/* line 160, ../sass/all/popup.scss */
+.popup .close {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: url(/img/close-popup.png) center center no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 171, ../sass/all/popup.scss */
+.popup .close:hover {
+  background: url(/img/close-popup-h.png) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 180, ../sass/all/popup.scss */
+  .popup {
+    width: 400px;
+    margin-top: -240px;
+    margin-left: -200px;
+  }
+  /* line 185, ../sass/all/popup.scss */
+  .popup h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-weight: 900;
+  }
+  /* line 192, ../sass/all/popup.scss */
+  .popup p {
+    margin-bottom: 15px;
+  }
+  /* line 198, ../sass/all/popup.scss */
+  .popup input.SubmitClose {
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 207, ../sass/all/popup.scss */
+  .popup {
+    width: 300px;
+    margin-top: -220px;
+    margin-left: -150px;
+  }
+  /* line 212, ../sass/all/popup.scss */
+  .popup h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-weight: 900;
+    padding: 0 10%;
+  }
+  /* line 220, ../sass/all/popup.scss */
+  .popup p {
+    margin-bottom: 7px;
+    font-size: 13px;
+  }
+  /* line 225, ../sass/all/popup.scss */
+  .popup input {
+    font-size: 15px;
+    width: 80%;
+    margin-right: 0px;
+    margin: 0.5em auto;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 2.5em;
+    padding: 0 1.5em;
+    font-weight: 600;
+  }
+  /* line 236, ../sass/all/popup.scss */
+  .popup input.SubmitClose {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 2.5em;
+    height: 2.5em;
+    padding: 0 2.5em;
+    width: max-content;
+  }
+}
+
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .page-item{
+  display: inline-block;
+  margin:  0 15px;
+  padding: 10px;
+  background: #f3f3f3;
+}
+
+.pagination .page-item.active{
+
+  background: #0D4E7B;
+}
+
+.pagination .page-item.active span{
+  color: #fff;
+}
